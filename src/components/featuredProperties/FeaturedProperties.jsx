@@ -37,6 +37,7 @@
 
 // export default FeaturedProperties;
 
+
 import useFetch from "../../hooks/useFetch";
 import "./featuredProperties.css";
 
@@ -49,9 +50,8 @@ const FeaturedProperties = () => {
       {loading ? (
         "Loading"
       ) : (
-        // Check if data is an array and has elements
-        data && data.length > 0 ? (
-          // Use map inside JSX to render each item
+        // Check if data is an array before using map
+        Array.isArray(data) && data.length > 0 ? (
           data.map((item) => (
             <div className="fpItem" key={item._id}>
               <img src={item.photos[0]} alt="" className="fpImg" />
@@ -67,7 +67,7 @@ const FeaturedProperties = () => {
             </div>
           ))
         ) : (
-          // Render a message if data is an empty array
+          // Handle the case when data is not an array or is an empty array
           "No featured properties available"
         )
       )}
