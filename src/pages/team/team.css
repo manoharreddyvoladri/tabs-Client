@@ -1,0 +1,84 @@
+/* team.css */
+
+/* Style for the entire section containing the team */
+.section-team {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for the container within the team section */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Style for the subheading "Our team" */
+  .subheading {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Style for the secondary heading */
+  .heading-secondary {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #000;
+  }
+  
+  /* Style for the container holding individual team members */
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Style for each individual team member */
+  .team {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .team:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Style for the image container within each team member */
+  .team-img {
+    /* Add styles for images here */
+  }
+  
+  /* Style for the content of each team member */
+  .team-content {
+    padding: 20px;
+  }
+  
+  /* Style for the name of each team member */
+  .team-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Style for the position of each team member */
+  .team-position {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the activities/specialization of each team member */
+  .team-activities {
+    font-size: 14px;
+    color: #999;
+  }
+  
